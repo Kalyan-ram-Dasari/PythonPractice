@@ -138,7 +138,8 @@ print("Bitwise XOR :", a ^ b)  # output Bitwise XOR(a^b):14
 print()
 print("Bitwise NOT :", ~a)  # output Bitwise NOT(~a):-11
 print()
-
+  
+       
 
 
 
