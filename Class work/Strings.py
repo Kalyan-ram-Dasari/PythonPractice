@@ -98,7 +98,7 @@ print(s.partition("@"))  # output ('hello', '@', 'world@python')
 print(s.rpartition("@"))  # output ('hello@world', '@', 'python') 
  
  
-l = "kalyan"  
+l = "kalyan"     
 
 
 
