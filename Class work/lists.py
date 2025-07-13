@@ -85,3 +85,5 @@ print(element_to_check not in k)  # output False
 x = any(k)
 print(x)  #output True 
 
+
+
