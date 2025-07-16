@@ -59,7 +59,8 @@ set1 = {2, 4, 5, 6}
 set2 = {4, 6, 7, 8}
 set3 = {1, 0, 12}
 
-print(set1.symmetric_difference(set2))
+print(set1.symmetric_difference(set2))  # output {2, 5, 7, 8}
+print(set1 ^ set2)  # output {2, 5, 7, 8}
 print(set1.symmetric_difference(set3))
 print(set2.symmetric_difference(set3))
 
@@ -68,7 +69,7 @@ print(set2.symmetric_difference(set3))
 #DISJOINT
 
 set2 = {7, 8, 9, 10}
-set3 = {1, 2}
+set3 = {1, 2} 
 
 # checking of disjoint of two sets
 print("set1 and set2 are disjoint?",set1.isdisjoint(set2)) # output True
