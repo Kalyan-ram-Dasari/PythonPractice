@@ -423,7 +423,31 @@
 
 
 #left with questions are 18,8, 17th in first 20     
+
+# num = int(input("enter a number : "))
+# for i in range(2,num):
+#     if i %2==0:
+#         print("Not a prime")
+#         break
+# else:
+#     print("prime")        
    
+   
+# num = int(input()) 
+# count =0
+# if num >1:
+#     for i in range(1,num+1):
+#         if i %2==0:    #n%i==0
+#             count += 1
+#     if count == 2:
+#         print("Prime")
+#     else:
+#         print("Not Prime")
+        
+
+                         
+                         
+                        
          
     
        
