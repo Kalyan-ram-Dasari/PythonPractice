@@ -1,28 +1,42 @@
-Booking_id = int(input("Enter Booking ID : "))#13
+# Inputs
+Order_ID = int(input("Enter Order ID: "))  # e.g., 101
 
-Service_name = input("Enter Service name : ") #Clear trip
+Product_Name = input("Enter Product Name: ")  # e.g., Fortune Sunflower Oil
 
-price = float(input("ENter price : "))  #4999.50
+Price = float(input("Enter Price: ₹"))  # e.g., 499.50
 
-categories = map(list,input("Enter Categories : "))   #["private dining ","Silver Service ","Buffet Service "]
+Categories = list(map(str.strip, input("Enter Categories (comma-separated, e.g., Edible Oil, Cooking Essentials): ").split(',')))
 
-Booking_Status = input("Enter Booking status m(confirmed|not confirmed): ")# Confirmed
+Order_Status = input("Enter Order Status (Delivered | Pending | Cancelled): ")  # e.g., Delivered
 
-Discount = float(input("Enter discount : "))#10.0
+Discount = float(input("Enter Discount (%): "))  # e.g., 10.0
 
-Customer_preference = map(set,input("Enter customer preference : "))#("sea view", "king view", "single room","Twin room")
+Customer_Preferences = set(map(str.strip, input("Enter Customer Preferences (comma-separated, e.g., Fast Delivery, Eco Packaging): ").split(',')))
 
-HotelDetails = eval(input("Enter Hotel Details : "))#{"name" : "krishna Hotels","PH NO" : 1234567890,"Location" : "Hyderabad"} 
+# Example: {"Name": "Blinkit Warehouse 4", "Contact": 9876543210, "Location": "Delhi"}
+Warehouse_Details = eval(input("Enter Warehouse Details (as dictionary): "))
 
-#1. Using Comma Separation (sep=',')
-print("Booking_id", Booking_id, "Service_name", Service_name, "Price", price, sep=", ")
 
-# 2. Using Percentage Formatting (% operator)
+total_price = Price - ((Discount / 100) * Price)
+
+
+
+# 1. Comma Separation (sep=', ')
+print("Order_ID", Order_ID, "Product_Name", Product_Name, "Price", Price, sep=', ')
+
+# 2. Percentage Formatting
 print("Discount Applied: %.2f%%" % Discount)
 
-#Using f-strings (f"")
-print(f"Booking_id : {Booking_id} \nPrice : {price} \nDiscount: {Discount}% \nBooking_Status: {Booking_Status} \nTotal fare is : {price - ((Discount / 100) * price)}")
+# 3. Using f-strings
+
+print(f"Product: {Product_Name}")
+print(f"Price: ₹{Price}")
+print(f"Discount: {Discount}%")
+print(f"Order Status: {Order_Status}")
+print(f"Total Price after Discount: ₹{total_price:.2f}")
 
 
-#Using .format() method
-print("Hotel Details :  Name -{} PH NO-{} Location-{}".format(HotelDetails["name"],HotelDetails["PH NO"], HotelDetails["Location"]))
+# 4. Using .format() method
+print("Warehouse Details: Name - {}, Contact - {}, Location - {}".format(
+    Warehouse_Details["Name"], Warehouse_Details["Contact"], Warehouse_Details["Location"]
+))
