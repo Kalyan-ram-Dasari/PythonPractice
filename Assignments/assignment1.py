@@ -40,3 +40,6 @@ print(f"Total Price after Discount: ₹{total_price:.2f}")
 print("Warehouse Details: Name - {}, Contact - {}, Location - {}".format(
     Warehouse_Details["Name"], Warehouse_Details["Contact"], Warehouse_Details["Location"]
 ))
+
+print("Thank you for shopping at ZEPTO",)
+
