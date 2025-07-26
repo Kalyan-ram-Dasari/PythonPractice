@@ -51,3 +51,17 @@
 #     summ += i 
 # print(f"for {n} sum is {summ}")    
 
+
+#missing number 
+
+l = [1,2,3,8,9,10,6,5,7]
+
+s=0
+for i in l:
+    s = s+i
+
+n=10
+sn = (n*(n+1))/2
+print(sn)
+Missing = s - sn
+print(Missing)
