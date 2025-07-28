@@ -6,8 +6,8 @@
 #2. Print Even Numbers from 1 to N (Using for loop)
 # n = int(input("Enter number : "))
 # for i in range(1,n+1):
-#     if i %2==0:
-#         print(i, end=" ")
+#     # if i %2==0:
+#     #     print(i, end=" ")
 
 
 #3. Sum of Numbers from 1 to N (Using for loop)
@@ -44,7 +44,7 @@
 #7. Check Prime Number (Using for loop)
 # n = int(input("enter a number : "))
 # c =  0
-# for i in range(2,n):
+# for i in range(2,n):   
 #     if n % i == 0:
 #         c += 1
 #         break 
@@ -62,10 +62,11 @@
           
           
  # reverse a string 
-# n = input("enter value : ").split()
+# n = input("enter value : ")
+# rev = ""
 # for i in n:
-#     i[::-1]==n
-#     print(i)
+#     rev = n[::-1]
+# print(rev)
     
     
     
@@ -114,7 +115,7 @@
 # for i in range(1,n+1):
 #     if i%5==0 :
 #         print(i)
-#         c+=1
+#         c+=1 
 # print("total count is ",c)  
 
 
@@ -184,8 +185,8 @@
 
 
 
-n = int(input("Enter number: "))
-s = 0
+# n = int(input("Enter number: "))
+# s = 0
 # for i in range(2, n+1):
 #     c = 0
 #     for j in range(1, i+1):
@@ -195,6 +196,9 @@ s = 0
 #         s += i
 
 # print(s)
+
+
+
 
   
             

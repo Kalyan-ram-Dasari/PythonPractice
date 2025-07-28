@@ -52,3 +52,8 @@ while True:
         AddtoCart[product] = qua
     else:
         print(f"{product} is not found")
+        
+        
+        
+        
+        
