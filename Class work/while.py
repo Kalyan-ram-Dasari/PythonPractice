@@ -18,14 +18,13 @@
 #     total = total +num  
 #     print(total) 
 
-num = list(input("enter a number : "))
-s = 0
-i = 0
-while num >len(i):
-    s +=i
-    i+=1
-print(s)    
-
+# num = list(input("enter a number : "))
+# s = 0
+# i = 0
+# while num >len(i):
+#     s +=i
+#     i+=1
+# print(s)       
 
 
 #5,4,3,2,1

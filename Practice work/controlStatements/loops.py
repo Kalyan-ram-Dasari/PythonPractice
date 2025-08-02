@@ -43,7 +43,7 @@
 
 #7. Check Prime Number (Using for loop)
 # n = int(input("enter a number : "))
-# c =  0
+# c =  0 
 # for i in range(2,n):   
 #     if n % i == 0:
 #         c += 1
@@ -198,8 +198,29 @@
 # print(s)
 
 
+#Armstrong number 
+
+# n = int(input("enter number : "))
+# length = len(str(n))
+# temp = n
+# s = 0
+# while n>0:
+#     digit = n%10
+#     print(digit)
+#     s= s+ digit**length
+#     print(s)
+#     n=n//10
+# if s == temp:
+#     print("Armstrong number")
+# else:
+#     print("Not a armstrong number")   
 
 
+
+
+#Fibbaconi  
+
+   
   
             
              

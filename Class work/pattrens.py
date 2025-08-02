@@ -83,6 +83,9 @@ enter the size 5
 #         print("*",end=' ')
 #     print()
 
+
+
+
 '''
 enter the size 5
         * 
@@ -91,6 +94,7 @@ enter the size 5
   * * * *
 * * * * *
 '''
+
 
 
 # n = int(input("enter the size "))
@@ -243,7 +247,47 @@ enter size : 5
 '''
 
 
+# n = int(input("enter size :"))
+# for row in range(n):
+#      for col in range(0,n-row-1):
+#        print(end= ' ')
+#      for col in range(0,row+1):
+#        print("*",end=' ')   
+#      print()
 
+
+'''
+    * 
+   * *
+  * * *
+ * * * *
+* * * * *
+''' 
+  
+  
+  
+  
+n = int(input("Enter size (odd number): "))
+
+for row in range(n):
+  if row <= n // 2:
+    # Upper half including middle
+    for col in range(n // 2 - row):
+      print(" ", end='')      # space before stars
+    for col in range(2 * row + 1):
+      print("*", end='')      # stars with no extra space
+  else:
+    # Lower half
+    for col in range(row - n // 2):
+      print(" ", end='')      # space before stars
+    for col in range(2 * (n - row) - 1):
+      print("*", end='')      # stars
+  print()
+
+
+     
+  
+    
 
 
 
