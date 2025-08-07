@@ -1,4 +1,4 @@
-# Inputs
+
 Order_ID = int(input("Enter Order ID: "))  # e.g., 101
 
 Product_Name = input("Enter Product Name: ")  # e.g., Fortune Sunflower Oil
@@ -13,7 +13,7 @@ Discount = float(input("Enter Discount (%): "))  # e.g., 10.0
 
 Customer_Preferences = set(map(str.strip, input("Enter Customer Preferences (comma-separated, e.g., Fast Delivery, Eco Packaging): ").split(',')))
 
-# Example: {"Name": "Blinkit Warehouse 4", "Contact": 9876543210, "Location": "Delhi"}
+# Example: {"Name": "ZEPTO Warehouse 4", "Contact": 9876543210, "Location": "Delhi"}
 Warehouse_Details = eval(input("Enter Warehouse Details (as dictionary): "))
 
 
