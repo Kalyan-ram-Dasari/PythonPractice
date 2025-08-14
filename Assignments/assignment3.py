@@ -52,17 +52,17 @@ questions = [
 ]
 
 score = 0
-for i, q in enumerate(questions):
-    print(f"\nQuestion {i+1}: {q['q']}")
-    for opt in q['options']:
+for i,key  in enumerate(questions):
+    print(f"\nQuestion {i+1}: {key['q']}")
+    for opt in key['options']:
         print(opt)
     user_ans = input("Your answer (A/B/C/D): ").strip().upper()
     
-    if user_ans == q['answer']:
+    if user_ans == key['answer']:
         print("correct answer")
         score+=1
     else:
-        print(f"Wrong! Correct answer is {q['answer']}") 
+        print(f"Wrong! Correct answer is {key['answer']}") 
         
 print("\n--- Quiz Completed ---")
 print(f"Your Score: {score}/10")
